@@ -16,5 +16,5 @@
 30 21  * * 1-5     $HOME/.profile; $SCRIPT_PATH/run_reports  >> $ECHO_PATH/run_reports.txt 2>&1
 #
 # Note: $MONGO_DATA must be accessible at boot; this won't work if it's in an encrypted home folder
-@reboot          $HOME/.profile; mongod --dbpath $MONGO_DATA
+# @reboot          $HOME/.profile; mongod --dbpath $MONGO_DATA
 @reboot          $SCRIPT_PATH/startup  >> $ECHO_PATH/startup.txt 2>&1
