@@ -30,7 +30,7 @@ COPY private/private_config.yaml ./private/private_config.yaml
 
 # setup cron
 COPY examples/docker/crontab /etc/cron.d/sysjobs
-RUN chmod 0644 /etc/cron.d/sysjobs
+# RUN chmod 0644 /etc/cron.d/sysjobs
 ENV PYTHONUNBUFFERED 1
 
 # install project
